@@ -3,19 +3,15 @@ int main()
 {
     int arr[100], n, key;
     int low, high, mid, found = 0;
-    // Input array size
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-    // Input sorted array
     printf("Enter %d elements in sorted order:\n", n);
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
-    // Input element to search
     printf("Enter the element to search: ");
     scanf("%d", &key);
-    // Binary Search
     low = 0;
     high = n - 1;
     while (low <= high)
